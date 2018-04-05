@@ -1,24 +1,14 @@
-# README
+# Webpacker with custom rails env like staging or demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+RAILS_ENV=staging bundle exec rails assets:precompile
+```
 
-Things you may want to cover:
+```bash
+RAILS_ENV=staging bundle exec rails webpacker:compile
+```
 
-* Ruby version
+```bash
+RAILS_ENV=staging NODE_ENV=production ./bin/webpack
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
